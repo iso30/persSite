@@ -1,0 +1,69 @@
+body{
+	margin: 0px;
+	line-height: 28px;
+}
+#logo{
+	margin-right: 20px;
+	position: relative;
+	float: left;
+}
+#logo h2{
+	margin: 0px !important;
+	padding: 11px 15px 9px 50px;
+}
+#logo h2 a{
+	font-size: 15px !important;
+	color:#333333;
+	letter-spacing: 2px;
+	font-family: cursive;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#menu-bar{
+	background-color: #f2f2f2;
+	margin-right: auto;
+	margin-left: auto;;
+	padding-right: 5%;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#test{
+	margin-top: 10%;
+	height: 100%;
+}
+#tool-bar{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float: right;
+}
+#tool-bar li{
+	margin: 0px;
+	position: relative;
+	list-style: square;
+	display: inline-block;
+	padding: 11px 15px 9px 15px;
+}
+
+#tool-bar li a{
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	color: #7f7f7f;
+}
+@media only screen and (max-width: 500px) {
+	#tool-bar li{
+		display: none;
+	}
+	#tool-bar li a{
+		display: none;
+	}
+	body{
+		background-color: blue;
+	}
+	
+}

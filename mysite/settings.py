@@ -118,3 +118,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1','stark-garden-77212.herokuapp.com']
 STATIC_URL = '/static/'
+INSTALLED_APPS = [
+    'hello.apps.HelloConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__) ,'/templates').replace('\\','/'),
+)
