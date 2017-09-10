@@ -2,7 +2,6 @@
 	<head>
 		{% load static %}
 		<link rel="stylesheet" type="text/css" href={% static 'home/style.css'%}>
-		<meta name="viewport" content="width=device-width" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -19,6 +18,9 @@
 				</ul>
 			</div>
 		</div>
-		<div id='test'>aaa</div>
+		<div id="template-body">
+			{% block 'body' %}
+			{% endblock %}
+		</div>
 	</body>
 </html>

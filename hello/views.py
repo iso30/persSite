@@ -4,4 +4,4 @@ from django.template import loader
 
 def index(request):
 	conext = {}
-	return render(request,'home/index.html',conext)
+	return render(request,'home/homepage.html',conext)

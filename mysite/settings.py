@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1','stark-garden-77212.herokuapp.com']
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 INSTALLED_APPS = [
     'hello.apps.HelloConfig',
     'django.contrib.admin',

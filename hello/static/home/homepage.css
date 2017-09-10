@@ -1,0 +1,40 @@
+#img-block{
+	background-image: url(img/sky.jpg);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+#img-caption{
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20%;
+	font-size: 40px;
+	font-style: italic;
+	line-height: 40px;
+	color: black;
+}
+.btn{
+	text-decoration: none;
+	display: block;
+	width: 10%;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border:1px solid transparent;
+	white-space: nowrap;
+	line-height: 1.5;
+	margin: auto;
+}
+.btn-red{
+	padding: 20px 40px;
+	border-color: black;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+	background-color: #005A31;
+}
