@@ -38,14 +38,134 @@
 	color: white;
 	background-color: #005A31;
 }
+/*------------TIMELINE CODE SECTION---------*/
+#about-title{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 15px;
+	margin-top: 200px;
+	font-weight: 700;
+}
+#about-text{
+	color:#777;
+	font-size: 16px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 75px;
+	font-style: italic;
+	font-weight: 400;
+}
+.timeline{
+	background-color: white;
+}
+.timeline ul{
+	padding: 0px;
+}
+/*Much of the timeline code was used from https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528*/
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding: 150px 0px 0px 0px;
+  background: #f1f1f1;
+}
+ 
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: inherit;
+  background-color: white;
+  border-color: #f1f1f1;
+  border-style: solid;
+  border-width: 5px;
+}
 
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding:15px 15px 15px 50px;
+  background: white;
+  margin: auto;
+}
+ 
+/*background image code*/
+.timeline ul li:nth-child(1)::after{
+	background-image: url(img/senior.jpg);
+	background-repeat: no-repeat;
+  	background-position: center;
+}
+.timeline ul li:nth-child(2)::after{
+	background-image: url(img/smc.png);
+	background-repeat: no-repeat;
+  	background-position: center;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+.timeline ul li div time{
+	font-size: 24px;
+	font-weight: bold;
+}
+.timeline ul li div h2{
+	font-size: 24px;
+	margin: 0px;
+}
+.timeline ul li div p{
+	color: gray;
+	margin: 0px;
+	margin-top: 5px;
+	line-height: 20px;
+}
 @media only screen and (max-width: 500px) {
 	.btn{
 		width: 25% !important;
-		font-size: 14px !important;
+		font-size: 13px !important;
 	}
 	#img-caption{
 		font-size: 32px;
 	}
-	
+	.timeline ul li div {
+    width: 250px;
+ 	}
+ 	/*-----------------TIMELINE CODE SECTION-------*/
+	.timeline ul li:nth-child(even) div {
+	left: 50px; /*250+45-6*/
+	}
+	.timeline ul li{
+		margin: 0px 0px 0px 50px;
+		background-size: 90px 90px;
+	} 
+	.timeline ul li::after {
+		left: 50%;
+		bottom: 70;
+		width: 100px;
+		height: 100px;
+	}
+	.timeline ul li div {
+		width: 150px;
+	}
 }
