@@ -43,8 +43,10 @@
 	text-align: center;
 	font-size: 40px;
 	margin-bottom: 15px;
-	margin-top: 200px;
-	font-weight: 700;
+	margin-top: 140px;
+	padding-top: 60px;
+	font-weight: bold;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #about-text{
 	color:#777;
@@ -128,9 +130,11 @@
 }
 .timeline ul li div time{
 	font-size: 24px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
 }
 .timeline ul li div h2{
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 24px;
 	margin: 0px;
 }
@@ -139,6 +143,104 @@
 	margin: 0px;
 	margin-top: 5px;
 	line-height: 20px;
+}
+/* ------------BEGIN PROKECT CSS--------------- */
+#projects{
+	background-color: #f7f7f7;
+	padding-bottom: 10px;
+}
+#projects h2{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 15px;
+	margin-top: 140px;
+	padding-top: 60px;
+	font-weight: bold;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#projects h3{
+	color:#777;
+	font-size: 16px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 75px;
+	font-style: italic;
+	font-weight: 400;
+}
+#slider-container{
+	width: 800px;
+	margin: auto;
+	background-color: white;
+	border-radius: 15%;
+}
+#slider-container ul{
+	margin: auto;
+	padding: 35px 35px 35px 60px;
+	margin-bottom: 50px;
+}
+#slider-container ul li{
+  list-style-type: none;
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10%;
+  padding: 0px 5px 0px 5px;
+  margin: 5px 5px 5px 5px;
+
+}
+#slider-container ul li h3{
+	margin: auto;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: black;
+	}
+#slider-container ul li img{
+	width: 175px;
+	height: 200px;
+	border-radius: 10%;
+	display: block;
+	margin: auto;
+	}
+#slider-container ul li p{
+	color: gray;
+	text-align: center;
+	}
+	/*---------------CONTACT CODE BEGINS------------*/
+#contact h2{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	padding-top: 60px;
+	font-weight: bold;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#contact h3{
+	color:#777;
+	font-size: 16px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 35px;
+	font-style: italic;
+	font-weight: 400;
+}
+#contact ul{
+	margin: auto;
+	width: 250px;
+	padding: 0px;
+}
+#contact ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin: 5px 5px 5px 5px;
+}
+#contact ul li img{
+	width: 100px;
+	height: 100px;
 }
 @media only screen and (max-width: 500px) {
 	.btn{
@@ -168,4 +270,12 @@
 	.timeline ul li div {
 		width: 150px;
 	}
+	#slider-container{
+		width: 300px;
+		background-color: #f7f7f7;
+	}
+	#slider-container ul{
+		padding:35px;
+	}
+	
 }

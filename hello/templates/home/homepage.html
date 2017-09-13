@@ -5,10 +5,10 @@
 	<div id="img-block">
 		<h2 id="img-caption">Hi, name is Mohammed Azad<br>Welcome to my little corner of the Internet</h2>
 		<div>
-			<a href="/" class="btn btn-land">Tell Me More</a>
+			<a href="#about-title" class="btn btn-land">Tell Me More</a>
 		</div>
 	</div>
-	<div id="about">
+	<div id="about" name="about">
 		<h2 id="about-title">ABOUT</h2>
 		<h3 id="about-text">Heres a little tour through my adademic and professional career</h3>
 	</div>
@@ -28,6 +28,51 @@
 					<p>I graduated John Marshall High School. I started coding in my senior year, where I began to develop a game. The more I dove into the field, the more passionate I became.</p>
 				</div>	
 			</li>
+						<li>
+				<div>
+					<time>JUNE 2014</time>
+					<h2>Graduated HS</h2>
+					<p>I graduated John Marshall High School. I started coding in my senior year, where I began to develop a game. The more I dove into the field, the more passionate I became.</p>
+				</div>	
+			</li>	
+			<li>
+				<div>
+					<time>AUGUST 2014</time>
+					<h2>Startted SMC</h2>
+					<p>I graduated John Marshall High School. I started coding in my senior year, where I began to develop a game. The more I dove into the field, the more passionate I became.</p>
+				</div>	
+			</li>
 		</ul>
 	</section>
+	<div id="projects">
+		<h2 id="about-title">PROJECTS</h2>
+		<h3 id="about-text">Some cool stuff I've been working on in my free time</h3>
+		<div id="slider-container">
+			<ul>
+				<li>
+					<h3>Title</h3>
+					<img src="{% static 'home/img/django.jpg' %}">
+					<p>Desc</p>
+				</li>
+				<li>
+					<h3>Title</h3>
+					<img src="{% static 'home/img/django.jpg' %}">
+					<p>Desc</p>
+				</li>
+				<li>
+					<h3>Title</h3>
+					<img src="{% static 'home/img/django.jpg' %}">
+					<p>Desc</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contact">
+		<h2>CONTACT</h2>
+		<h3>You can contact me at varsity.azad@gmail.com, or by the social media given below. A link to my resume can be found <a href="/">here</a></h3>
+		<ul>
+			<li><a href=""><img src="{% static 'home/img/github.png'%}"></a></li>
+			<li><a href=""><img src="{% static 'home/img/linkedin.png'%}"></a></li>
+		</ul>
+	</div>
 {% endblock %}
